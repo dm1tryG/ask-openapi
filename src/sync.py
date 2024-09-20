@@ -26,7 +26,7 @@ def sync(url: str):
         documents=dumped_paths,
         embedding=embeddings,
         persist_directory="data",
-        collection_name="lc_chroma_demo",
+        collection_name="spec",
     )
 
 
