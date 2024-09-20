@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ask-openapi"
+version = "0.1.0"
+description = "Chat with your Open API Specification"
+authors = ["Dmitrii Galkin <galkin.dmitry.485@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.38.0"
+langchain-openai = "^0.2.0"
+langchain-chroma = "^0.1.4"
+pydantic-settings = "^2.5.2"
+langchain = "^0.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

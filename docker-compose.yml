@@ -1,0 +1,16 @@
+services:
+  ask_openapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    container_name: ask_openapi
+    volumes:
+      - ./data:/app/data
+      - ./pyproject.toml:/app/pyproject.toml
+      - ./poetry.lock:/app/poetry.lock
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+    command: streamlit run /app/ui.py
