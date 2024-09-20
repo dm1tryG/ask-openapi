@@ -1,2 +1,1 @@
-# chat-with-openapi
-Chat with your Open API Specification
+# Chat with your Open API Specification
