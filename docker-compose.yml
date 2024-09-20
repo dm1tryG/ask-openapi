@@ -13,4 +13,6 @@ services:
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+      - OPENAI_API_EMBEDDINGS_MODEL=${OPENAI_API_EMBEDDINGS_MODEL}
+      - OPEN_API_MODEL=${OPEN_API_MODEL}
     command: streamlit run /app/ui.py
